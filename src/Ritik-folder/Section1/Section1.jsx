@@ -2,7 +2,10 @@ import React from 'react'
 
 function Section1() {
   return (
-    <div>Section1</div>
+    <h1 className="text-3xl font-bold underline">
+    Hello world!
+  </h1>
+
   )
 }
 
