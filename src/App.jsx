@@ -1,4 +1,4 @@
-import React from 'react';
+
 import RitikSection1 from "./Ritik-folder/Section1/Section1";
 import DimpySection1 from "./Dimpy-folder/Section1/section1";
 import Rahulsection1 from "./Rahul-folder/Section1/section1";
