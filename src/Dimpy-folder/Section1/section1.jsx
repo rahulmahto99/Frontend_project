@@ -3,13 +3,7 @@ import React from 'react';
 function Section1() {
   return (
     <div>
-      {/* <header className="bg-neutral-800 text-white p-4 flex justify-between items-center">
-        <div className="flex items-center space-x-4">
-          <div className="w-36 h-4 bg-no-repeat bg-contain" style={{ backgroundImage: 'url(https://public-assets.envato-static.com/assets/logos/envato_market-dde916a48af7413e54aa058fe7ae6856752fca799da4bec355f00aea904bfa19.svg)' }}></div>
-        </div>
-        <button className="bg-[#82b440] shadow-[#6f9a37] 'sans':['Helvetica Neue'] hover:bg-[#79aa39] place-items-center text-white py-2 px-4 rounded"><a href="https://themeforest.net/checkout/103039293/create_account?_ga=2.4684659.1510235861.1719405330-1093604875.1719405330"> Buy now</a>
-        </button>
-      </header> */}
+      
 
       <div className="justify-space-between">
       <div className="bg-white py-4 shadow">
