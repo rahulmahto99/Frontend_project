@@ -2,8 +2,8 @@ import React from 'react';
 
 function Section1() {
   return (<>
-    <div className="justify-between inline-flex ">
-    <div className="justify-space-evenly">  
+    <div className="justify-between flex items-center h-20">
+    <div className="justify- flex items-center">  
         <a href="#" className="text-blue-600 font-semibold hover:underline">
           HOME <span className="hover:no-underline">▾</span>
         </a>
@@ -11,17 +11,16 @@ function Section1() {
           ABOUT US
         </a>
         <a href="#" className="text-gray-800 hover:text-blue-600 hover:underline">
-          SERVICE <span className="text-black hover:no-underline hover:text-blue-600">▾</span>
+         SERVICE <span className="text-black hover:no-underline hover:text-blue-600">▾</span>
         </a>
       </div>
-      <div className="div2">
+      <div className="div2 h-10">
         <img
           src="https://demo2.pavothemes.com/insul/wp-content/uploads/2024/04/logo.svg"
           alt="Logo"
-          className="h-8"
         />
       </div>
-      <div className="div3">
+      <div className="div3 justify-evenly">
         <a href="#" className="text-gray-800 hover:text-blue-600 hover:underline">
           BLOG <span className="text-black hover:no-underline hover:text-blue-600">▾</span>
         </a>
@@ -31,13 +30,11 @@ function Section1() {
         <a href="#" className="text-gray-800 hover:text-blue-600 hover:underline">
           CONTACT <span className="text-black hover:no-underline hover:text-blue-600">▾</span>
         </a>
-      </div>
-      <div className="div4">
         <button className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-full">
           TRY FOR FREE <span className="ml-1">→</span>
         </button>
-
       </div>
+      
     </div>
       
       </>
