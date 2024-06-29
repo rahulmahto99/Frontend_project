@@ -1,57 +1,87 @@
-import "./Header.css";
-import HeaderButton from "../Buttons/Button";
+import { RxCross1 } from "react-icons/rx";
+import Countdown from "../Countdown/Countdown";
+import { FaPhoneAlt } from "react-icons/fa";
+import { CiMail } from "react-icons/ci";
+import { FaAngleDown } from "react-icons/fa6";
+import { CiSearch } from "react-icons/ci";
+import { CiShoppingCart } from "react-icons/ci";
+import { CiHeart } from "react-icons/ci";
+import { FaRegUser } from "react-icons/fa";
 
-export const Header = () => {
-  const menuItems1 = [
-    { name: "Home", link: "/" },
-    { name: "About Us", link: "/about" },
-    { name: "Service", link: "/service" },
-  ];
-  const menuItems2 = [
-    { name: "Blog", link: "/blog" },
-    { name: "Page", link: "/page" },
-    { name: "Contact", link: "/contact" },
-  ];
-  
+const Header = () => {
   return (
-    <>
-      <div className="parent flex justify-between items-center px-10 py-6">
-        <div className="child1">
-          <ul className="flex gap-10">
-            {menuItems1.map((item, index) => (
-              <li
-                key={index}
-                className="menu-item font-medium text-[#3a3838]  uppercase text-base"
-              >
-                <a href={item.link}>{item.name}</a>
-              </li>
-            ))}
-          </ul>
+    // Header Notification Start Here
+    <div className="w-full ">
+      <div className="notification-header bg-[url('https://new-ella-demo.myshopify.com/cdn/shop/files/bg_announcement_countdow_2048x.jpg?v=1640253389')] bg-cover bg-no-repeat bg-center min-h-32 flex justify-between items-center px-5 w-full">
+        <div></div>
+        <div className="flex flex-col items-center mx-auto">
+          <h1 className="text-xs font-bold text-white">Limited-time Offer!</h1>
+          <Countdown />
         </div>
-        <div className="child2 flex items-end justify-end">
-          <div className="logo">
-            <img
-              src="https://demo2.pavothemes.com/insul/wp-content/uploads/2024/04/logo.svg"
-              alt="logo"
-            />
-          </div>
-        </div>
-        <div className="child3 flex  items-center">
-          <ul className="flex gap-10 items-center">
-          {menuItems2.map((item, index) => (
-              <li
-                key={index}
-                className="menu-item text-[#3a3838] font-medium uppercase text-base"
-              >
-                <a href={item.link}>{item.name}</a>
-              </li>
-            ))}
-
-            <HeaderButton />
-          </ul>
+        <div>
+          <RxCross1 color="white" />
         </div>
       </div>
-    </>
+      <div className=" Header-top max-w-[1200px] mx-auto bg-[#F7F8FA]  py-2 flex justify-between">
+        <div className="child1 flex gap-3">
+          <div className="phone text-xs flex items-center font-normal text-[#06142e]">
+            <FaPhoneAlt size={16} />
+            <span className="pl-2">Toll-free: (091) 123-4567</span>
+          </div>
+          <div className="email text-xs flex items-center font-normal text-[#06142e]">
+            <CiMail size={16} />
+            <span className="pl-2">email@domain.com</span>
+          </div>
+        </div>
+        <div className="child2 text-xs font-bold text-[#06142e]">
+          <h1>Free Shipping Over $99*</h1>
+        </div>
+        <div className="child3 flex gap-3">
+          <h1 className="text-xs font-normal text-[#06142e]">Theme FAQs</h1>
+          <h1 className="text-xs font-normal text-[#06142e]">Need Help?</h1>
+        </div>
+      </div>
+      <div className=" Main-header max-w-[1200px] mx-auto flex py-4  bg-white  max-auto items-center">
+        <div className="logo flex basis-3/12">
+          <img
+            src="https://new-ella-demo.myshopify.com/cdn/shop/files/home-9-logo.png?v=1640338542&width=300"
+            alt=""
+            width={140}
+            className="object-contain"
+          />
+        </div>
+        <div className="search-box flex  bg-slate-200 basis-5/12">
+          <input
+            type="text"
+            placeholder="Search The Box"
+            className="input-full-width bg-slate-50"
+            width={200}
+          />
+          <span>
+            <CiSearch />
+          </span>
+        </div>
+        <div className="flex basis-4/12 justify-between">
+          <div className="cart flex items-center">
+            <CiShoppingCart  size={30} style={{ fontWeight: 'bold' }}/>
+            <span className="text-base font-medium text=[#06142e]">Cart</span>
+          </div>
+          <div className="wishlist  flex items-center">
+            <CiHeart  size={25} style={{ fontWeight: 'bold' }} />
+            <span className="text-base font-medium text=[#06142e]">Wishlist</span>
+          </div>
+          <div className="signin flex  items-center">
+            <FaRegUser  size={25} style={{ fontWeight: 'bold' }} />
+            <span  className="text-base font-medium text=[#06142e]">Sign in Or Register</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    // Header Notification End Here
+
+    // Main Header Start Here
+
+    // Main Header End Here
   );
 };
 
