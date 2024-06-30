@@ -13,7 +13,7 @@ function ElectronicsProduct() {
       <div className="w-full border-b-2 mt-4 mb-8"></div>
       {/* image */}
       <div className="img">
-        <img className=" " src="https://new-ella-demo.myshopify.com/cdn/shop/files/banner_375x.jpg?v=1640244728"></img>
+        <img className="min-w-[450px] min-h-[250px] " src="https://new-ella-demo.myshopify.com/cdn/shop/files/banner_375x.jpg?v=1640244728"></img>
         {/* <div className="grid grid-cols-2"> */}
         {/* </div> */}
         </div>
