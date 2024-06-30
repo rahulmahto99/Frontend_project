@@ -7,7 +7,7 @@ function App() {
     <>
     <Header />
     <Herosection/>
-    <ProductCategories/>
+    {/* <ProductCategories/> */}
     <Brand />
     </>
   );
