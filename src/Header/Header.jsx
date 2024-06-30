@@ -26,7 +26,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className=" Header-top bg-[#F7F8FA] px-7 py-3  sm:hidden">
+      <div className=" Header-top bg-[#F7F8FA] px-7 py-3 ">
         <div className="max-w-[1200px] mx-auto flex justify-between  ">
           <div className="child1 flex gap-3">
             <div className="phone text-xs flex items-center font-normal  text-[#06142e]">
