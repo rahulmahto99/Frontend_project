@@ -1,6 +1,6 @@
 function Brand() {
   return (
-    <div className="text-center pt-10  px-4 pb-10 max-w-[1200px] mx-auto">
+    <div className="text-center pt-10 px-7 pb-10 max-w-[1200px] mx-auto">
       <div className="text-lg font-extrabold uppercase pb-7">BRAND WE LOVE</div>
       <div className="flex basis-20 justify-center items-center  pb-10 gap-7">
         <div className="border-[#e2e5e7] border transition-all hover:border-[#2d2d2d] hover:transition-all hover:border overflow-hidden cursor-pointer ">

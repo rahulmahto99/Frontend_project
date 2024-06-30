@@ -2,7 +2,7 @@ import { FaAngleDown } from "react-icons/fa6";
 
 function ProductCategories() {
   return (
-    <div className="flex gap-6 px-5 py-10 max-w-[1200px] mx-auto">
+    <div className="flex gap-6 px-7 py-10 max-w-[1200px] mx-auto">
       <div className="basis-4/12 overflow-hidden">
         <div className="basis-4/12 bg-[url('https://new-ella-demo.myshopify.com/cdn/shop/files/h9s1-custom-image-banner-1_370x.jpg?v=1639976027')] h-svh bg-no-repeat bg-cover pt-10 pl-8 hover:scale-105 hover:transition-all">
           <h1 className="text-xl flex items-center gap-1 text-[rgb(11,3,53)] font-extrabold">

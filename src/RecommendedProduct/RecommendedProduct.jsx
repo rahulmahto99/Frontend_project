@@ -26,7 +26,7 @@ function RecommendedProduct() {
 
   return (
     <div className="bg-[#F7F8FA]">
-      <div className="max-w-[1200px] mx-auto text-xl px-4 font-bold pt-7 pb-7">
+      <div className="max-w-[1200px] mx-auto text-xl font-bold pt-12 px-7  pb-7">
         <h1 className="pb-5">RECOMMENDED FOR YOU</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {visibleProducts.map((product) => (
@@ -58,7 +58,7 @@ function RecommendedProduct() {
         </div>
         {/* Show More button */}
         {visibleProducts.length < products.length && (
-          <div className="flex justify-center mt-4">
+          <div className="flex justify-center mt-4 w-60 items-center">
             <button
               onClick={handleShowMore}
               className="text-xs block font-semibold px-10 py-3 uppercase hover:bg-[#3A7AF5] hover:text-white rounded w-full  border-black bg-white border hover:border-[#3A7AF5] text-[#0b0335] w-72 mt-10"

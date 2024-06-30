@@ -12,11 +12,11 @@ const Header = () => {
   return (
     // Header Notification Start Here
     <div className="w-full ">
-      <div className="notification-header bg-[url('https://new-ella-demo.myshopify.com/cdn/shop/files/bg_announcement_countdow_2048x.jpg?v=1640253389')] bg-cover bg-no-repeat bg-center min-h-32 px-5 w-full">
+      <div className="notification-header bg-[url('https://new-ella-demo.myshopify.com/cdn/shop/files/bg_announcement_countdow_2048x.jpg?v=1640253389')] bg-cover bg-no-repeat bg-center px-7 min-h-32 w-full sm:bg-[#06142e]">
         <div className="flex justify-between max-w-[1200px] mx-auto  min-h-32  items-center">
           <div>{/* first box */}</div>
           <div className="flex flex-col items-center ">
-            <h1 className="text-xs font-bold text-white">
+            <h1 className="text-xs font-bold text-white sm:text-center ">
               Limited-time Offer!
             </h1>
             <Countdown />
@@ -26,10 +26,10 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className=" Header-top bg-[#F7F8FA]  py-3 ">
+      <div className=" Header-top bg-[#F7F8FA] px-7 py-3  sm:hidden">
         <div className="max-w-[1200px] mx-auto flex justify-between  ">
           <div className="child1 flex gap-3">
-            <div className="phone text-xs flex items-center font-normal text-[#06142e]">
+            <div className="phone text-xs flex items-center font-normal  text-[#06142e]">
               <FaPhoneAlt size={16} />
               <span className="pl-2">Toll-free: (091) 123-4567</span>
             </div>
@@ -47,7 +47,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className=" Main-header max-w-[1200px] mx-auto flex py-4  bg-white  max-auto items-center">
+      <div className=" Main-header max-w-[1200px] mx-auto flex py-4 px-7 bg-white  max-auto items-center">
         <div className="logo flex basis-3/12">
           <img
             src="https://new-ella-demo.myshopify.com/cdn/shop/files/home-9-logo.png?v=1640338542&width=300"
