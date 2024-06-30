@@ -6,6 +6,7 @@ const posts = [
     author: 'by Halo Themes on Dec 20,2021',
     description: 'Nam tempus turpis at metus scelerisque placerat nulla deumantos sollicitudin felis. Pellentesque diam dolor, elementum et lobortis at, mollis ut risus. Sedcuman des faucibus sullamcorper mattis fusce molestie elit a lorem tempus scelerisque blandit est cursus....',
     imageUrl: 'https://new-ella-demo.myshopify.com/cdn/shop/articles/blog1_570x.jpg?v=1640051895',
+    view: 'View Details',
   },
   {
     id: 2,
@@ -13,6 +14,7 @@ const posts = [
     author: 'by Halo Themes on Dec 20,2021',
     description: 'Nam tempus turpis at metus scelerisque placerat nulla deumantos sollicitudin felis. Pellentesque diam dolor, elementum et lobortis at, mollis ut risus. Sedcuman des faucibus sullamcorper mattis fusce molestie elit a lorem tempus scelerisque blandit est cursus....',
     imageUrl: 'https://new-ella-demo.myshopify.com/cdn/shop/articles/blog2_570x.jpg?v=1640051855',
+    view: 'View Details',
   },
 ];
 
@@ -34,6 +36,7 @@ function Footer() {
                 <h3 className="text-lg font-bold mb-2 text-[#1d5dd9]">{post.title}</h3>
                 <p className="text-[#888888] text-xs mb-[13px]">{post.author}</p>
                 <p className="text-[#5d5c5c] mb-[6px] text-xs leading-7">{post.description}</p>
+                <a className="text-[#5d5c5c] mb-[6px] text-xs leading-7 hover:underline hover:text-[#1d5dd9]" href="https://new-ella-demo.myshopify.com/blogs/blog-home9/commodo-muso-magna-cosmopolis">{post.view}</a>
               </div>
             </div>
           ))}
