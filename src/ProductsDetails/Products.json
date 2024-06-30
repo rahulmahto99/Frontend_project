@@ -1,0 +1,114 @@
+[
+    {
+      "id": 1,
+      "name": "Sodling",
+      "image": "https://new-ella-demo.myshopify.com/cdn/shop/products/product-9-6_870x.jpg?v=1640334112",
+      "description": "Sodling (Product 1) Sample - Computers & Accessories For Sale - DarkOrange",
+      "price": 429.00,
+      "discountedPrice": 309.00
+    },
+    {
+        "id": 2,
+        "name": "Sodling",
+        "image": "https://new-ella-demo.myshopify.com/cdn/shop/products/product-app-1_870x.jpg?v=1640334213",
+        "description": "(Product 17) Sample - Computers & Accessories For Sale - DarkOrange",
+        "price": 429.00,
+        "discountedPrice": 79.00
+      },
+    {
+        "id": 3,
+        "name": "Ella - Halothemes",
+        "image": "https://new-ella-demo.myshopify.com/cdn/shop/products/product-7-1_870x.jpg?v=1640334117",
+        "description": "(Product 3) Sample - Computers & Accessories For Sale - Black",
+        "price": 429.00,
+        "discountedPrice": 979.00
+      },
+    {
+        "id": 4,
+        "name": "Ella - Halothemes",
+        "image": "https://new-ella-demo.myshopify.com/cdn/shop/products/product-3-2_870x.jpg?v=1640334136",
+        "description": "(Product 4) Sample - Computers & Accessories For Sale - Black",
+        "price": 429.00,
+        "discountedPrice": 9.00
+      },
+    {
+        "id": 5,
+        "name": "Ella - Halothemes",
+        "image": "https://new-ella-demo.myshopify.com/cdn/shop/products/product-11-1_870x.jpg?v=1640334165",
+        "description": "(Product 5) Sample - Computers & Accessories For Sale - Black",
+        "price": 429.00,
+        "discountedPrice": 9.00
+      },
+    {
+        "id":6,
+        "name": "Ella - Halothemes",
+        "image": "https://new-ella-demo.myshopify.com/cdn/shop/products/product-11-1_870x.jpg?v=1640334165",
+        "description": "(Product 5) Sample - Computers & Accessories For Sale - Black",
+        "price": 429.00,
+        "discountedPrice": 9.00
+      },
+    {
+        "id": 7,
+        "name": "Ella - Halothemes",
+        "image": "https://new-ella-demo.myshopify.com/cdn/shop/products/product-11-1_870x.jpg?v=1640334165",
+        "description": "(Product 5) Sample - Computers & Accessories For Sale - Black",
+        "price": 429.00,
+        "discountedPrice": 9.00
+      },
+    {
+        "id": 8,
+        "name": "Ella - Halothemes",
+        "image": "https://new-ella-demo.myshopify.com/cdn/shop/products/product-11-1_870x.jpg?v=1640334165",
+        "description": "(Product 5) Sample - Computers & Accessories For Sale - Black",
+        "price": 429.00,
+        "discountedPrice": 9.00
+      },
+    {
+        "id": 9,
+        "name": "Ella - Halothemes",
+        "image": "https://new-ella-demo.myshopify.com/cdn/shop/products/product-11-1_870x.jpg?v=1640334165",
+        "description": "(Product 5) Sample - Computers & Accessories For Sale - Black",
+        "price": 429.00,
+        "discountedPrice": 9.00
+      },
+    {
+        "id": 10,
+        "name": "Ella - Halothemes",
+        "image": "https://new-ella-demo.myshopify.com/cdn/shop/products/product-11-1_870x.jpg?v=1640334165",
+        "description": "(Product 5) Sample - Computers & Accessories For Sale - Black",
+        "price": 429.00,
+        "discountedPrice": 9.00
+      },
+    {
+        "id":11,
+        "name": "Ella - Halothemes",
+        "image": "https://new-ella-demo.myshopify.com/cdn/shop/products/product-11-1_870x.jpg?v=1640334165",
+        "description": "(Product 5) Sample - Computers & Accessories For Sale - Black",
+        "price": 429.00,
+        "discountedPrice": 9.00
+      },
+    {
+        "id": 12,
+        "name": "Ella - Halothemes",
+        "image": "https://new-ella-demo.myshopify.com/cdn/shop/products/product-11-1_870x.jpg?v=1640334165",
+        "description": "(Product 5) Sample - Computers & Accessories For Sale - Black",
+        "price": 429.00,
+        "discountedPrice": 9.00
+      }, 
+    {
+        "id": 13,
+        "name": "Ella - Halothemes",
+        "image": "https://new-ella-demo.myshopify.com/cdn/shop/products/product-11-1_870x.jpg?v=1640334165",
+        "description": "(Product 5) Sample - Computers & Accessories For Sale - Black",
+        "price": 429.00,
+        "discountedPrice": 9.00
+      },
+    {
+        "id": 14,
+        "name": "Ella - Halothemes",
+        "image": "https://new-ella-demo.myshopify.com/cdn/shop/products/product-11-1_870x.jpg?v=1640334165",
+        "description": "(Product 5) Sample - Computers & Accessories For Sale - Black",
+        "price": 429.00,
+        "discountedPrice": 9.00
+      }
+  ]

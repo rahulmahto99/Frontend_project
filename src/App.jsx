@@ -1,7 +1,7 @@
 import Header from "./Header/Header";
-import Herosection from "./Hero-section/Hero";
+import Herosection from "./HeroSection/Hero";
 import ProductCategories from "./ProductCategories/Product-categories";
-import Brand from "./Brand-section/Brand";
+import Brand from "./BrandSection/Brand";
 import ElectronicsProduct from "./ElectronicsProduct/ElectronicsProduct";
 import RecommendedProduct from "./RecommendedProduct/RecommendedProduct"
 
