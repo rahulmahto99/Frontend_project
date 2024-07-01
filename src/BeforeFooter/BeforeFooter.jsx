@@ -18,7 +18,7 @@ const posts = [
   },
 ];
 
-function Footer() {
+function BeforeFooter() {
   return (
     <div className="container block w-full max-w-full px-4">
       <div className="header text-center">
@@ -47,4 +47,4 @@ function Footer() {
   )
 }
 
-export default Footer
+export default BeforeFooter
