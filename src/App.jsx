@@ -8,6 +8,8 @@ import ComputerProduct from "./ComputerProduct/ComputerProduct";
 import Beforefooter from "./BeforeFooter/BeforeFooter";
 import footer from './Footer/Footer'
 import Footer from "./Footer/Footer";
+
+
 function App() {
   return (
     <>
