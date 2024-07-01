@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import Productbtn from "../Buttons/ProductButton";
 
-function ComputerProduct() {
+function CameraProduct() {
   const [activeTab, setActiveTab] = useState("tab1");
   const [products, setProducts] = useState([]);
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -37,7 +37,7 @@ function ComputerProduct() {
       <div className="max-w-[1200px] mx-auto px-7 py-10">
         <div className="headtop flex justify-between border border-b-2 border-x-0 border-t-0">
           <h1 className="text-lg font-extrabold text-[#0b0335] border border-b-2 inline-block border-[#1D5DD9] border-x-0 border-t-0">
-            COMPUTERS & LAPTOPS
+          CAMERAS & CAMCORDERS
           </h1>
           <nav className="flex text-xs font-normal gap-6">
             <button
@@ -69,7 +69,7 @@ function ComputerProduct() {
         <div className="container pt-7 flex">
           <div className="first basis-5/12">
             <div className="overflow-hidden">
-              <div className="bg-[url('https://new-ella-demo.myshopify.com/cdn/shop/files/home-9-banner-product-tab-2.jpg?v=1640936286')] h-full pb-96 bg-no-repeat bg-cover pt-10 pl-8 hover:scale-105 p-52 hover:transition-all"></div>
+              <div className="bg-[url('https://new-ella-demo.myshopify.com/cdn/shop/files/home-9-banner-product-tab-4.jpg?v=1640936318')] h-full pb-96 bg-no-repeat bg-cover pt-10 pl-8 hover:scale-105 p-52 hover:transition-all"></div>
             </div>
           </div>
           <div className="second basis-7/12 pl-4">
@@ -146,4 +146,4 @@ function ComputerProduct() {
   );
 }
 
-export default ComputerProduct;
+export default CameraProduct;

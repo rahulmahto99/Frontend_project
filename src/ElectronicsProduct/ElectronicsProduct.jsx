@@ -1,58 +1,150 @@
-import {  GrPrevious } from "react-icons/gr";
-import { GrNext } from "react-icons/gr";
+import { useState, useEffect } from "react";
+import Productbtn from "../Buttons/ProductButton";
+
 function ElectronicsProduct() {
-    return (
-        <div className="w-full block mb-4 border-b-0">
-            <div className="flex items-center justify-between">
-                <div className="text-xl font-extrabold text-[#0B0335]">ELECTRONICS</div>
-                {/* <div className="flex space-x-4 text-xs mt-2">
-        <a href="#" className="text-[#585DDB] border-r border-gray-300 pr-2">New Products</a>
-        <a href="#" className="text-gray-500 hover:text-[#585DDB] border-r border-gray-300 pr-2">Best Sellers</a>
-        <a href="#" className="text-gray-500 hover:text-[#585DDB] border-r border-gray-300 pr-2">Featured Products</a>
-        <a href="#" className="text-gray-500 hover:text-[#585DDB]">View All</a>
-      </div> */}
+  const [activeTab, setActiveTab] = useState("tab1");
+  const [products, setProducts] = useState([]);
+  const [currentSlide, setCurrentSlide] = useState(0);
 
+  useEffect(() => {
+    // Fetch data from products.json (or your API endpoint)
+    fetch("/src/ProductsDetails/Products.json")
+      .then((response) => response.json())
+      .then((data) => setProducts(data))
+      .catch((error) => console.error("Error fetching products:", error));
+  }, []);
 
-            </div>
-            <div className="w-full border-b-2 mt-4 mb-8"></div>
-            {/* image */}
-            <div className="w-full flex h-auto p-1">
-                <img className="min-w-[450px] min-h-[250px] " src="https://new-ella-demo.myshopify.com/cdn/shop/files/banner_375x.jpg?v=1640244728"></img>
-                <div className="flex-row">
-                    <div className="row">
-                        <div className="col-md-12 heroSlider-fixed">
-                            <div className="overlay">
-                            </div>
-                            {/*  Slider*/}
-                            <div className="flex">
-                                <div>
-                                    <img src="https://new-ella-demo.myshopify.com/cdn/shop/products/product-app-4_23546feb-c1d6-4645-819e-10afcda659f6.jpg?v=1640334234" alt="" />
-                                </div>
-                                <div>
-                                    <img src="https://new-ella-demo.myshopify.com/cdn/shop/products/product-app-2_9e916edc-fec2-4699-bd5e-5433b5f07c26_870x.jpg?v=1640334229" alt="" />
-                                </div>
-                                <div>
-                                    <img src="https://new-ella-demo.myshopify.com/cdn/shop/products/product-app-2_f3820da1-3014-42d6-bf64-e9b8b5cfd508_870x.jpg?v=1640334223" alt="" />
-                                </div>
-                                <div>
-                                    <img src="https://new-ella-demo.myshopify.com/cdn/shop/products/product-app-3_870x.jpg?v=1640334216" alt="" />
-                                </div>
-                            </div>
-                            {/* control arrows */}
-                            <div className="prev">
-                            <span className=""><GrPrevious /></span>
-                            </div>
-                            <div className="next">
-                                <span className=""><GrNext /></span>
-                            </div>
+  const handleTabClick = (tabId) => {
+    setActiveTab(tabId);
+    setCurrentSlide(0); // Reset to the first slide when tab changes
+  };
 
-                        </div>
-                    </div>
-                </div> {/* <div className="grid grid-cols-2"> */}
-                {/* </div> */}
-            </div>
+  const handleNextSlide = () => {
+    setCurrentSlide((prevSlide) => (prevSlide + 3) % productsToDisplay.length);
+  };
+
+  const handlePrevSlide = () => {
+    setCurrentSlide((prevSlide) =>
+      prevSlide === 0 ? productsToDisplay.length - 3 : prevSlide - 3
+    );
+  };
+
+  const productsToDisplay =
+    activeTab === "tab1" ? products.slice(0, 9) : products;
+
+  return (
+    <div className="">
+      <div className="max-w-[1200px] mx-auto px-7 py-10">
+        <div className="headtop flex justify-between border border-b-2 border-x-0 border-t-0">
+          <h1 className="text-lg font-extrabold text-[#0b0335] border border-b-2 inline-block border-[#1D5DD9] border-x-0 border-t-0">
+          ELECTRONICS
+
+          </h1>
+          <nav className="flex text-xs font-normal gap-6">
+            <button
+              className={`tab-button ${
+                activeTab === "tab1" ? "active" : ""
+              } hover:text-[#1d5dd9] text-[#828282]`}
+              onClick={() => handleTabClick("tab1")}
+            >
+              New Products
+            </button>
+            <button
+              className={`tab-button ${
+                activeTab === "tab2" ? "active" : ""
+              } hover:text-[#1d5dd9] text-[#828282]`}
+              onClick={() => handleTabClick("tab2")}
+            >
+              Best Sellers
+            </button>
+            <button
+              className={`tab-button ${
+                activeTab === "tab3" ? "active" : ""
+              } hover:text-[#1d5dd9] text-[#828282]`}
+              onClick={() => handleTabClick("tab3")}
+            >
+              Featured Products
+            </button>
+          </nav>
         </div>
-    )
+        <div className="container pt-7 flex">
+          <div className="first basis-5/12">
+            <div className="overflow-hidden">
+              <div className="bg-[url('https://new-ella-demo.myshopify.com/cdn/shop/files/banner.jpg?v=1640244728')] h-full pb-96 bg-no-repeat bg-cover pt-10 pl-8 hover:scale-105 p-52 hover:transition-all"></div>
+            </div>
+          </div>
+          <div className="second basis-7/12 pl-4">
+            <main>
+              {activeTab === "tab1" && (
+                <article id="tab1">
+                  <div className="content relative">
+                    <button
+                      onClick={handlePrevSlide}
+                      className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-500 text-white px-2 py-1"
+                    >
+                      &#8592;
+                    </button>
+                    <div className="flex overflow-hidden">
+                      {productsToDisplay
+                        .slice(currentSlide, currentSlide + 3)
+                        .map((product) => (
+                          <div
+                            key={product.id}
+                            className="w-1/3 px-4 py-4 bg-[#FFFFFF] shadow-sm relative mb-4"
+                          >
+                            <div className="img overflow-hidden">
+                              <img
+                                className="w-full"
+                                src={product.image}
+                                alt={product.name}
+                              />
+                            </div>
+                            <h1 className="text-xs font-normal absolute right-4 top-2 px-4 py-1 text-white rounded bg-[#F42B23]">
+                              Sale
+                            </h1>
+                            <h1 className="text-sm font-bold pb-2 text-[#0b0335]">
+                              {product.name}
+                            </h1>
+                            <h1 className="text-xs font-normal pb-2 text-black hover:underline hover:text-[#1d5dd9]">
+                              {product.description} ${product.price}
+                            </h1>
+                            <h1 className="pb-2 text-sm font-normal text-[#969696]">
+                              ${product.price} From{" "}
+                              <span className="text-sm font-bold text-[#f42b23]">
+                                ${product.discountedPrice}
+                              </span>
+                            </h1>
+                            <button>
+                              <Productbtn />
+                            </button>
+                          </div>
+                        ))}
+                    </div>
+                    <button
+                      onClick={handleNextSlide}
+                      className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-black border-black	rounded-full	 border-2	 text-white px-2 py-1"
+                    >
+                      &#8594;
+                    </button>
+                  </div>
+                </article>
+              )}
+              {activeTab === "tab2" && (
+                <article id="tab2">
+                  <div className="content"></div>
+                </article>
+              )}
+              {activeTab === "tab3" && (
+                <article id="tab3">
+                  <div className="content"></div>
+                </article>
+              )}
+            </main>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
 
-export default ElectronicsProduct
+export default ElectronicsProduct;

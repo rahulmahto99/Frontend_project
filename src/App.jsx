@@ -5,8 +5,9 @@ import Brand from "./BrandSection/Brand";
 import ElectronicsProduct from "./ElectronicsProduct/ElectronicsProduct";
 import RecommendedProduct from "./RecommendedProduct/RecommendedProduct";
 import ComputerProduct from "./ComputerProduct/ComputerProduct";
+import SmartPhones from "./SmartphonesProduct/smartphonesProduct";
+import CameraProduct from "./cameraProduct/CameraProduct";
 import Beforefooter from "./BeforeFooter/BeforeFooter";
-import footer from './Footer/Footer'
 import Footer from "./Footer/Footer";
 
 
@@ -19,6 +20,8 @@ function App() {
     <Brand />
     <ElectronicsProduct/>
     <ComputerProduct/>
+    <SmartPhones/>
+    <cameraProduct/>
     <RecommendedProduct/>
     <Beforefooter/>
     <Footer/>
