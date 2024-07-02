@@ -20,7 +20,8 @@ const posts = [
 
 function BeforeFooter() {
   return (
-    <div className="container block w-full max-w-full px-4">
+    <div className="flex justify-between max-w-[1200px] mx-auto  min-h-32  items-center">
+    <div className="container block"> 
       <div className="header text-center">
         <h3 className="title text-[#0b0335] text-xl font-extrabold tracking-tighter mb-[7px]">
           <span className="bg-transparent">LATEST POSTS</span>
@@ -28,10 +29,10 @@ function BeforeFooter() {
         <div className="rte subtext-blog text-[#3c3c3c] text-[12px]">Phasellus lorem malesuada ligula pulvinar commodo</div>
       </div>
       <div className="container mx-auto py-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-0 px-[125px]">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2  ">
           {posts.map(post => (
             <div key={post.id} className="bg-white rounded-lg  overflow-hidden hover:shadow-xl transition-shadow duration-300">
-              <img className="min-w-fit h-90 object-cover " src={post.imageUrl} alt={post.title} ></img>
+              <img className="min-w-fit h-90 object-cover hover:scale-105 transform transition-transform duration-500 ease-in " src={post.imageUrl} alt={post.title} ></img>
               <div className="p-6">
                 <h3 className="text-lg font-bold mb-2 text-[#1d5dd9]">{post.title}</h3>
                 <p className="text-[#888888] text-xs mb-[13px]">{post.author}</p>
@@ -42,6 +43,7 @@ function BeforeFooter() {
           ))}
         </div>
       </div>
+    </div>
     </div>
 
   )
