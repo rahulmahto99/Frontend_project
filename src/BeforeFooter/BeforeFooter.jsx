@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaShoppingFast, FaShieldAlt, FaStar, FaHeadset } from 'react-icons/fa';
+import { FaShippingFast, FaShieldAlt, FaStar, FaHeadset } from 'react-icons/fa';
 import Feature from './Feature';
 const posts = [
   {
@@ -21,7 +21,7 @@ const posts = [
 ];
 const features = [
   {
-    icon: FaShoppingFast,
+    icon: FaShippingFast,
     title: 'Free Standard Delivery',
     description: 'Metus tellus multiricies a quam sit amet lorem diam libero de cosmopolis.'
   },
@@ -71,7 +71,7 @@ function BeforeFooter() {
       </div>
     </div>
     <div className="before_footer_b mx-auto p-4">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0">
         {features.map((feature, index) => (
           <Feature
             key={index}
